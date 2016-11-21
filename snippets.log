@@ -116,3 +116,58 @@ DEBUG:root:Constructing put subparser
 DEBUG:root:Constructing get subparser
 INFO:root:Storing snippet 'Test': 'This is a new test'
 DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test': 'This is a test'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test': 'This is a test'
+DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test': 'This is a test'
+DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test': 'This is a test1'
+DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test': 'This is a test1'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test1': 'This is a test1'
+DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test1': 'This is a test1'
+DEBUG:root:Snippet stored successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing get subparser
+INFO:root:Storing snippet 'Test1': 'This is a test2'
+DEBUG:root:Snippet stored successfully
