@@ -13,7 +13,6 @@ def put(name, snippet):
     """
     Store a snippet with an associated name
     Returns the name and the snippet
-    
     """
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     with connection, connection.cursor() as cursor:
@@ -26,7 +25,8 @@ def put(name, snippet):
     return name, snippet
     
 def get(name):
-    """Retrieve the snippet with a given name.
+    """
+    Retrieve the snippet with a given name.
     If no such snippet, return '404: Snippet Not Found'.
     Returns the snippet.
     """
@@ -39,8 +39,22 @@ def get(name):
         return "Snippet not found"
     return row[1]
     
+def catalog():
+    """
+    Display a list of keywords 
+    currently available in the database
+    """
+    logging.info("Retrieved keywords")
+    with connection, connection.cursor() as cursor:
+        cursor.execute("select keyword from snippets order by keyword")
+        row = cursor.fetchall()
+    logging.debug("Keywords retrieved successfully")
+    return row
+    
 def main():
-    """Main function"""
+    """
+    Main function
+    """
     logging.info("Constructing parser")
     parser = argparse.ArgumentParser(description="Store and retrieve snippets of text")
     
@@ -57,6 +71,10 @@ def main():
     get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
     get_parser.add_argument("name", help="Name of the snippet")
     
+    #subparser for the catalog command
+    logging.debug("Constructing catalog subparser")
+    catalog_parser = subparsers.add_parser("catalog", help="Retrieve list of keywords")
+    
     
     arguments = parser.parse_args()
     #convert parsed arguments from Namespace to dictionary
@@ -69,6 +87,9 @@ def main():
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved snippet: {!r}".format(snippet))
+    elif command == "catalog":
+        names =  catalog(**arguments)
+        print("Retrieved keywords: {!r}".format(names))
     
  
 if __name__ == "__main__":
